@@ -1,0 +1,525 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 44002,
+	"name": "Arcane Dungeon",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Button",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Anchor",
+			"name": "Anchor",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direction",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Physics",
+			"name": "Physics",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Turret",
+			"name": "Turret",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"bundled": false
+		}
+	],
+	"uniqueId": "2nxyt8evj8o",
+	"objectTypes": {
+		"items": [
+			"Health",
+			"ActiveZone",
+			"FinishChest",
+			"Textzone",
+			"LevelSelectTitle",
+			"Tutorial",
+			"Dungeon1",
+			"HealthCrate",
+			"Wall"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"Player",
+					"TestHand",
+					"TestShield",
+					"TestSword",
+					"HealthUI",
+					"PlayerSprite"
+				],
+				"subfolders": [],
+				"name": "Player and Items"
+			},
+			{
+				"items": [
+					"FollowSlime",
+					"TurretSlime",
+					"Projectile"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"BossWhole",
+							"BossFourth",
+							"BossSixteenth"
+						],
+						"subfolders": [],
+						"name": "Boss"
+					}
+				],
+				"name": "Enemies"
+			},
+			{
+				"items": [
+					"Key",
+					"Crate"
+				],
+				"subfolders": [],
+				"name": "Grabbables"
+			},
+			{
+				"items": [
+					"Gate",
+					"TestWall",
+					"TiledBackground"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"PressurePlate1",
+							"PressureGate1",
+							"PressurePlate2",
+							"PressureGate2",
+							"PressureGate3",
+							"PressurePlate3"
+						],
+						"subfolders": [],
+						"name": "PressurePlates"
+					}
+				],
+				"name": "Environment"
+			},
+			{
+				"items": [
+					"Keyboard",
+					"Mouse",
+					"Audio"
+				],
+				"subfolders": [],
+				"name": "System"
+			},
+			{
+				"items": [
+					"MainMenu",
+					"PlayButton",
+					"RetryButton",
+					"GameOver",
+					"TitleScreen"
+				],
+				"subfolders": [],
+				"name": "Menus"
+			},
+			{
+				"items": [
+					"TutorialText",
+					"SwordUI",
+					"ShieldUI",
+					"HandUI"
+				],
+				"subfolders": [],
+				"name": "LevelUI"
+			}
+		]
+	},
+	"functionsName": "Functions",
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [
+			"Enemy",
+			"Grabbable",
+			"Plates"
+		],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"TestLevel",
+			"GameOver",
+			"Main Menu",
+			"Level Select",
+			"Tutorial",
+			"Dungeon1"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"LevelEvents",
+			"Menus",
+			"Tutorial",
+			"Dungeon1"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [
+				{
+					"name": "main.js",
+					"type": "application/javascript",
+					"sid": 573179856239593,
+					"script-info": {
+						"purpose": "main"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [
+				{
+					"name": "door_close.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 711173048626476,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "orb.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 661022353497028,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "hit1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 345308718005002,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Final Fantasy Victory Sound Effects.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 464738099620274,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "break.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 831241050073790,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Key.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 110266499936572,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Grunt.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 331578495594621,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "out.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 996113609244699,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"music": {
+			"items": [
+				{
+					"name": "TutorialMusic.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 466695000559351,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "DungeonMusic.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 323949158151165,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [
+				{
+					"name": "The Wild Breath of Zelda.otf",
+					"type": "application/font-sfnt",
+					"sid": 615477044297212,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 187846683705190,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 352995211951344,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 847297639356651,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 608670658150084,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 291534446712232,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 691860308207914,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 845221152564634,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"Timeline 1"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"flowcharts": {
+		"items": [],
+		"subfolders": []
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"autoIncrementVersion": false,
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": true,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "landscape",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"sampling": "trilinear",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"exportFileStructure": "folders",
+		"uidAllocationMode": "increment"
+	},
+	"viewportWidth": 1280,
+	"viewportHeight": 720,
+	"firstLayout": "Main Menu"
+}

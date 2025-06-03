@@ -1,0 +1,99 @@
+{
+	"name": "Dungeon1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "KilledKingSlimes",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 426194746788215
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "LevelEvents"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "BossSixteenth",
+					"sid": 361117229038358
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 641137755335535,
+					"parameters": {
+						"variable": "KilledKingSlimes",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 735229722185582
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 924861547327467,
+					"parameters": {
+						"variable": "KilledKingSlimes",
+						"comparison": 5,
+						"value": "8"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "FinishChest",
+					"sid": 107299502774211,
+					"parameters": {
+						"instance-variable": "Active",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 247074582936239
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 608898324162102
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 342718364150616
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 232322747892877,
+					"parameters": {
+						"audio-file": "DungeonMusic",
+						"loop": "looping",
+						"volume": "-8",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 511112915501769
+		}
+	],
+	"sid": 621434480734815
+}

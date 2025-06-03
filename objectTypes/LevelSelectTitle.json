@@ -1,0 +1,10 @@
+{
+	"name": "LevelSelectTitle",
+	"plugin-id": "Text",
+	"sid": 302740513012984,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

@@ -1,0 +1,108 @@
+{
+	"name": "TestShield",
+	"plugin-id": "Sprite",
+	"sid": 985738684509183,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 742710355631720
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 267090367667616
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 701,
+						"height": 900,
+						"originX": 0.5335235378031383,
+						"originY": 0.49333333333333335,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 513700,
+						"collisionPoly": {
+							"points": [
+								0.44935805991440797,
+								0.0022222222222222222,
+								0.9985734664764622,
+								0.03111111111111111,
+								0.9728958630527818,
+								0.7433333333333333,
+								0.48074179743223966,
+								0.9677777777777777,
+								0.0028530670470756064,
+								0.7311111111111112,
+								0.029957203994293864,
+								0.056666666666666664
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 422667232772552,
+				"name": "normal",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 701,
+						"height": 900,
+						"originX": 0.4664764621968617,
+						"originY": 0.5066666666666666,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7288442,
+						"collisionPoly": {
+							"points": [
+								0.550641940085592,
+								0.9977777777777778,
+								0.0014265335235378318,
+								0.9688888888888889,
+								0.02710413694721825,
+								0.2566666666666667,
+								0.5192582025677603,
+								0.03222222222222226,
+								0.9971469329529244,
+								0.26888888888888884,
+								0.9700427960057061,
+								0.9433333333333334
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 823936771438100,
+				"name": "yFlipped",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

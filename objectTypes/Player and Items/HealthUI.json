@@ -1,0 +1,16 @@
+{
+	"name": "HealthUI",
+	"plugin-id": "Text",
+	"sid": 836465781137590,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 158219577744992
+		}
+	],
+	"effectTypes": []
+}

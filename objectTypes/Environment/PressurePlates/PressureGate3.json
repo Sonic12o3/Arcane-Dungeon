@@ -1,0 +1,65 @@
+{
+	"name": "PressureGate3",
+	"plugin-id": "Sprite",
+	"sid": 972245629969883,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 219465901347922
+		},
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 467556705497586
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 636,
+						"height": 212,
+						"originX": 0.449685534591195,
+						"originY": 0.49056603773584906,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8100830,
+						"collisionPoly": {
+							"points": [
+								0.8962264150943396,
+								0.0047169811320754715,
+								0.9968553459119497,
+								0.02830188679245283,
+								0.9858490566037735,
+								0.9905660377358491,
+								0.0047169811320754715,
+								0.9669811320754716,
+								0.018867924528301886,
+								0.014150943396226415
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 826776061943164,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

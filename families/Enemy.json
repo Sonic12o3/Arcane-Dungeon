@@ -1,0 +1,48 @@
+{
+	"name": "Enemy",
+	"plugin-id": "Sprite",
+	"sid": 352193025681656,
+	"instanceVariables": [
+		{
+			"name": "Health",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 231979644395559
+		},
+		{
+			"name": "ItemChanceDone",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 776393714144540
+		},
+		{
+			"name": "Active",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 494540216208505
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 844671384534027
+		},
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 211142073969951
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"FollowSlime",
+		"TurretSlime",
+		"BossFourth",
+		"BossSixteenth",
+		"BossWhole"
+	]
+}

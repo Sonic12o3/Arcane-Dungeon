@@ -1,0 +1,35 @@
+{
+	"name": "Tutorial",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "LevelEvents"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 684572825387290
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 672921142029371,
+					"parameters": {
+						"audio-file": "TutorialMusic",
+						"loop": "looping",
+						"volume": "-8",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 811211339317154
+		}
+	],
+	"sid": 306513498339360
+}

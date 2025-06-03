@@ -1,0 +1,100 @@
+{
+	"name": "TestSword",
+	"plugin-id": "Sprite",
+	"sid": 703669277859569,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 398663861859525
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 474759931244328
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 262,
+						"height": 814,
+						"originX": 0.6603053435114504,
+						"originY": 0.542997542997543,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2545981,
+						"collisionPoly": {
+							"points": [
+								0.4961832061068702,
+								0.0085995085995086,
+								0.9923664122137404,
+								0.8722358722358723,
+								0.3893129770992366,
+								0.9975429975429976,
+								0.003816793893129771,
+								0.8648648648648649
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 431557574314868,
+				"name": "normal",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 262,
+						"height": 814,
+						"originX": 0.3396946564885496,
+						"originY": 0.457002457002457,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1713403,
+						"collisionPoly": {
+							"points": [
+								0.5038167938931297,
+								0.9914004914004914,
+								0.007633587786259555,
+								0.1277641277641277,
+								0.6106870229007634,
+								0.002457002457002422,
+								0.9961832061068703,
+								0.1351351351351351
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 939641371405206,
+				"name": "yFlipped",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

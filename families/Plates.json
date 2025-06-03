@@ -1,0 +1,21 @@
+{
+	"name": "Plates",
+	"plugin-id": "Sprite",
+	"sid": 883943258263834,
+	"instanceVariables": [
+		{
+			"name": "Pressed",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 506694815560507
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"PressurePlate1",
+		"PressurePlate2",
+		"PressurePlate3"
+	]
+}

@@ -1,0 +1,97 @@
+{
+	"name": "BossWhole",
+	"plugin-id": "Sprite",
+	"sid": 662155660554738,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "HasSplit",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 839407958742677
+		},
+		{
+			"name": "MaxVelocity",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 477895210394418
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 965,
+						"height": 939,
+						"originX": 0.505699481865285,
+						"originY": 0.503727369542066,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5325996,
+						"collisionPoly": {
+							"points": [
+								0.5409326424870466,
+								0.002129925452609159,
+								0.6922279792746114,
+								0.010649627263045794,
+								0.9056994818652849,
+								0.26517571884984026,
+								0.9979274611398964,
+								0.6719914802981896,
+								0.9419689119170984,
+								0.8264110756123536,
+								0.3927461139896373,
+								0.9968051118210862,
+								0.05181347150259067,
+								0.8935037273695421,
+								0.29015544041450775,
+								0.022364217252396165
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.11191709844559586,
+								"y": 0.2055378061767838
+							},
+							{
+								"name": "Image Point 2",
+								"x": 0.9119170984455959,
+								"y": 0.2268370607028754
+							},
+							{
+								"name": "Image Point 3",
+								"x": 0.13264248704663212,
+								"y": 0.853035143769968
+							},
+							{
+								"name": "Image Point 4",
+								"x": 0.8953367875647669,
+								"y": 0.8572949946751863
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 556231738293228,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

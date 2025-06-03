@@ -1,0 +1,24 @@
+{
+	"name": "Grabbable",
+	"plugin-id": "Sprite",
+	"sid": 560664169786926,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 250939847252778
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 812104955108258
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"Key",
+		"Crate",
+		"HealthCrate"
+	]
+}

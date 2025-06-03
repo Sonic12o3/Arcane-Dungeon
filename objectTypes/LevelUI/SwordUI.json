@@ -1,0 +1,95 @@
+{
+	"name": "SwordUI",
+	"plugin-id": "Sprite",
+	"sid": 858796685078885,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 791448210416541
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1000,
+						"height": 1000,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6778535,
+						"collisionPoly": {
+							"points": [
+								0.04,
+								0.002,
+								0.998,
+								0.04,
+								0.96,
+								0.998,
+								0.002,
+								0.96
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 675080797046564,
+				"name": "Unselected",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 1000,
+						"height": 1000,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8437347,
+						"collisionPoly": {
+							"points": [
+								0.04,
+								0.002,
+								0.998,
+								0.04,
+								0.96,
+								0.998,
+								0.002,
+								0.96
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 710989974318775,
+				"name": "Selected",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

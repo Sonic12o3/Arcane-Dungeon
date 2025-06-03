@@ -1,0 +1,111 @@
+{
+	"name": "Menus",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "MainMenu",
+					"sid": 524739984855631
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 167548033372241,
+					"parameters": {
+						"layout": "Main Menu"
+					}
+				}
+			],
+			"sid": 915691617581503
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "RetryButton",
+					"sid": 153599767534541
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 693601615179878,
+					"parameters": {
+						"layout": "Tutorial"
+					}
+				}
+			],
+			"sid": 427784494866389
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "PlayButton",
+					"sid": 842831737472876
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 279414240223373,
+					"parameters": {
+						"layout": "Level Select"
+					}
+				}
+			],
+			"sid": 412451287501487
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Dungeon1",
+					"sid": 229685594097623
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 674491690313801,
+					"parameters": {
+						"layout": "Dungeon1"
+					}
+				}
+			],
+			"sid": 391968679792324
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Tutorial",
+					"sid": 195173135703992
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 846348365148033,
+					"parameters": {
+						"layout": "Tutorial"
+					}
+				}
+			],
+			"sid": 950514875554654
+		}
+	],
+	"sid": 596574619465060
+}

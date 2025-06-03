@@ -1,0 +1,2954 @@
+{
+	"name": "LevelEvents",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "EquippedItem",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 543775917761780
+		},
+		{
+			"eventType": "variable",
+			"name": "PlayerHealth",
+			"type": "number",
+			"initialValue": "10",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 879145523658772
+		},
+		{
+			"eventType": "comment",
+			"text": "1= sword\n2 = Shield\n3 = Hand"
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "ItemEquipped",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 642243249562860,
+							"parameters": {
+								"key": 49
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 887360294589908,
+							"parameters": {
+								"variable": "EquippedItem",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TestSword",
+							"sid": 494168320334564,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TestShield",
+							"sid": 296739286223373,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TestHand",
+							"sid": 150451076208461,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 750065472102876
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 326903713819001,
+							"parameters": {
+								"key": 50
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 809314371750001,
+							"parameters": {
+								"variable": "EquippedItem",
+								"value": "2"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TestSword",
+							"sid": 596040161232200,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TestShield",
+							"sid": 743216615597606,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TestHand",
+							"sid": 721341960152270,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 565896320461397
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 833856337746637,
+							"parameters": {
+								"key": 51
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 186644712388702,
+							"parameters": {
+								"variable": "EquippedItem",
+								"value": "3"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TestSword",
+							"sid": 607580290256126,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TestShield",
+							"sid": 818371320722850,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TestHand",
+							"sid": 923782784877616,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 113555507893985
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 678844934458418
+						}
+					],
+					"actions": [],
+					"sid": 864697051357678
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-between-angles",
+							"objectClass": "TestSword",
+							"sid": 566914862075786,
+							"parameters": {
+								"first-angle": "0",
+								"second-angle": "90"
+							}
+						},
+						{
+							"id": "is-between-angles",
+							"objectClass": "TestSword",
+							"sid": 227709289521251,
+							"parameters": {
+								"first-angle": "270",
+								"second-angle": "360"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TestSword",
+							"sid": 231396995944644,
+							"parameters": {
+								"animation": "\"normal\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 414122703891637,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-between-angles",
+							"objectClass": "TestSword",
+							"sid": 841656312749475,
+							"parameters": {
+								"first-angle": "90",
+								"second-angle": "270"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TestSword",
+							"sid": 841748611718141,
+							"parameters": {
+								"animation": "\"yFlipped\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 268222163070719
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-between-angles",
+							"objectClass": "TestShield",
+							"sid": 189802576446163,
+							"parameters": {
+								"first-angle": "0",
+								"second-angle": "90"
+							}
+						},
+						{
+							"id": "is-between-angles",
+							"objectClass": "TestShield",
+							"sid": 807740575144698,
+							"parameters": {
+								"first-angle": "270",
+								"second-angle": "360"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TestShield",
+							"sid": 847941737471792,
+							"parameters": {
+								"animation": "\"normal\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 539447735366568,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-between-angles",
+							"objectClass": "TestShield",
+							"sid": 202734456294597,
+							"parameters": {
+								"first-angle": "90",
+								"second-angle": "270"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TestShield",
+							"sid": 217610099189598,
+							"parameters": {
+								"animation": "\"yFlipped\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 789537140586523
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-between-angles",
+							"objectClass": "TestHand",
+							"sid": 199352017817780,
+							"parameters": {
+								"first-angle": "0",
+								"second-angle": "90"
+							}
+						},
+						{
+							"id": "is-between-angles",
+							"objectClass": "TestHand",
+							"sid": 468075773723753,
+							"parameters": {
+								"first-angle": "270",
+								"second-angle": "360"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TestHand",
+							"sid": 507145888674670,
+							"parameters": {
+								"animation": "\"normal\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 202326875538746,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-between-angles",
+							"objectClass": "TestHand",
+							"sid": 758108947330780,
+							"parameters": {
+								"first-angle": "90",
+								"second-angle": "270"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TestHand",
+							"sid": 585164357502183,
+							"parameters": {
+								"animation": "\"yFlipped\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 926868339661760
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 105240918569798,
+							"parameters": {
+								"variable": "EquippedItem",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "SwordUI",
+							"sid": 883800810080922,
+							"parameters": {
+								"animation": "\"Selected\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "ShieldUI",
+							"sid": 476656528085319,
+							"parameters": {
+								"animation": "\"Unselected\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "HandUI",
+							"sid": 698001905667382,
+							"parameters": {
+								"animation": "\"Unselected\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 851990852317018
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 604611886738422,
+							"parameters": {
+								"variable": "EquippedItem",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "SwordUI",
+							"sid": 863360036958393,
+							"parameters": {
+								"animation": "\"Unselected\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "ShieldUI",
+							"sid": 269756144453195,
+							"parameters": {
+								"animation": "\"Selected\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "HandUI",
+							"sid": 725541897166609,
+							"parameters": {
+								"animation": "\"Unselected\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 577254604710897
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 191085068081770,
+							"parameters": {
+								"variable": "EquippedItem",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "SwordUI",
+							"sid": 962709028688656,
+							"parameters": {
+								"animation": "\"Unselected\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "ShieldUI",
+							"sid": 569398125383491,
+							"parameters": {
+								"animation": "\"Unselected\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "HandUI",
+							"sid": 313306327434209,
+							"parameters": {
+								"animation": "\"Selected\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 416681137292147
+				}
+			],
+			"sid": 454285809906238
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "PlayerControls",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Items",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "Items will only have physics if they're visible"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-visible",
+									"objectClass": "TestShield",
+									"sid": 233929444747463
+								}
+							],
+							"actions": [
+								{
+									"id": "set-enabled",
+									"objectClass": "TestShield",
+									"sid": 546108435734494,
+									"behaviorType": "Physics",
+									"parameters": {
+										"mode": "enabled"
+									}
+								}
+							],
+							"sid": 266162547998377
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-visible",
+									"objectClass": "TestShield",
+									"sid": 540598774137456,
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-enabled",
+									"objectClass": "TestShield",
+									"sid": 588379634609551,
+									"behaviorType": "Physics",
+									"parameters": {
+										"mode": "disabled"
+									}
+								}
+							],
+							"sid": 909386615869647
+						},
+						{
+							"eventType": "comment",
+							"text": "Shield destroys projectiles"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "TestShield",
+									"sid": 848126787821092,
+									"parameters": {
+										"object": "Projectile"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "TestShield",
+									"sid": 396076882361103
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Projectile",
+									"sid": 854192956321386
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 889196377379556,
+									"parameters": {
+										"audio-file": "break",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 115346932413235
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 513725916917854,
+									"parameters": {
+										"variable": "EquippedItem",
+										"comparison": 1,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "TestSword",
+									"sid": 310374133372358,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 693737457959557
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "TestHand",
+									"sid": 773411694911687,
+									"parameters": {
+										"object": "Grabbable"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "TestHand",
+									"sid": 836231291096437
+								}
+							],
+							"actions": [],
+							"sid": 728070878541971,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "mouse-button-is-down",
+											"objectClass": "Mouse",
+											"sid": 200598119836365,
+											"parameters": {
+												"mouse-button": "left"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position",
+											"objectClass": "Grabbable",
+											"sid": 403186402371178,
+											"parameters": {
+												"x": "TestHand.X",
+												"y": "TestHand.Y"
+											}
+										}
+									],
+									"sid": 842200992451305,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-button-released",
+													"objectClass": "Mouse",
+													"sid": 143829884809579,
+													"parameters": {
+														"mouse-button": "left"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "apply-impulse-at-angle",
+													"objectClass": "Grabbable",
+													"sid": 694797899851692,
+													"behaviorType": "Physics",
+													"parameters": {
+														"impulse": "10000",
+														"angle": "angle(Player.X, Player.Y, Grabbable.X, Grabbable.Y)",
+														"image-point": "0"
+													}
+												}
+											],
+											"sid": 598962167798309
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 744583461293867
+								}
+							],
+							"actions": [],
+							"sid": 684302253857418
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 302057194868344
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "TestSword",
+									"sid": 508856788009358,
+									"parameters": {
+										"x": "Player.X + cos(angle(Player.X, Player.Y, Mouse.X, Mouse.Y)) * Player.MeleeRadius",
+										"y": "Player.Y + sin(angle(Player.X, Player.Y, Mouse.X, Mouse.Y)) * Player.MeleeRadius"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "TestSword",
+									"sid": 259089509583942,
+									"parameters": {
+										"angle": "angle(Player.X, Player.Y, Mouse.X, Mouse.Y)"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "TestShield",
+									"sid": 809974495560472,
+									"parameters": {
+										"x": "Player.X + cos(angle(Player.X, Player.Y, Mouse.X, Mouse.Y)) * Player.MeleeRadius",
+										"y": "Player.Y + sin(angle(Player.X, Player.Y, Mouse.X, Mouse.Y)) * Player.MeleeRadius"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "TestShield",
+									"sid": 245581658841542,
+									"parameters": {
+										"angle": "angle(Player.X, Player.Y, Mouse.X, Mouse.Y)"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "TestHand",
+									"sid": 175570639274514,
+									"parameters": {
+										"x": "Player.X + cos(angle(Player.X, Player.Y, Mouse.X, Mouse.Y)) * Player.MeleeRadius",
+										"y": "Player.Y + sin(angle(Player.X, Player.Y, Mouse.X, Mouse.Y)) * Player.MeleeRadius"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "TestHand",
+									"sid": 681962416727064,
+									"parameters": {
+										"angle": "angle(Player.X, Player.Y, Mouse.X, Mouse.Y)"
+									}
+								}
+							],
+							"sid": 596334574691998
+						}
+					],
+					"sid": 743404365286640
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Physics-based Movement",
+					"description": "Replacing 8-way with physics",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 841429550076483,
+									"parameters": {
+										"key": 87
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "apply-force",
+									"objectClass": "Player",
+									"sid": 535231337014824,
+									"behaviorType": "Physics",
+									"parameters": {
+										"force-x": "0",
+										"force-y": "-7000",
+										"image-point": "0"
+									}
+								}
+							],
+							"sid": 532856740248747
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 138489907360059,
+									"parameters": {
+										"key": 65
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "apply-force",
+									"objectClass": "Player",
+									"sid": 474505804301341,
+									"behaviorType": "Physics",
+									"parameters": {
+										"force-x": "-7000",
+										"force-y": "0",
+										"image-point": "0"
+									}
+								}
+							],
+							"sid": 104863303027039
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 247157056561155,
+									"parameters": {
+										"key": 83
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "apply-force",
+									"objectClass": "Player",
+									"sid": 762910070956572,
+									"behaviorType": "Physics",
+									"parameters": {
+										"force-x": "0",
+										"force-y": "7000",
+										"image-point": "0"
+									}
+								}
+							],
+							"sid": 770812845250697
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 966182293959121,
+									"parameters": {
+										"key": 68
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "apply-force",
+									"objectClass": "Player",
+									"sid": 752461953013145,
+									"behaviorType": "Physics",
+									"parameters": {
+										"force-x": "7000",
+										"force-y": "0",
+										"image-point": "0"
+									}
+								}
+							],
+							"sid": 416381947363914
+						}
+					],
+					"sid": 164849870614835
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "PlayerSprite",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 933679249916307
+								}
+							],
+							"actions": [
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "PlayerSprite",
+									"sid": 166321932905031,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "Player",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								}
+							],
+							"sid": 477960342675018
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-velocity",
+									"objectClass": "Player",
+									"sid": 335968483225716,
+									"behaviorType": "Physics",
+									"parameters": {
+										"which": "x-velocity",
+										"comparison": 5,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "PlayerSprite",
+									"sid": 104970898216482,
+									"parameters": {
+										"state": "not-mirrored"
+									}
+								}
+							],
+							"sid": 446459736664365
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-velocity",
+									"objectClass": "Player",
+									"sid": 343190634052718,
+									"behaviorType": "Physics",
+									"parameters": {
+										"which": "x-velocity",
+										"comparison": 2,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "PlayerSprite",
+									"sid": 331200973909974,
+									"parameters": {
+										"state": "mirrored"
+									}
+								}
+							],
+							"sid": 721105268200183
+						}
+					],
+					"sid": 813306497430345
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 838150643482885
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "HealthUI",
+							"sid": 989543233793840,
+							"parameters": {
+								"text": "\"Health: \" & PlayerHealth &\" / 10\""
+							}
+						}
+					],
+					"sid": 517185765697640
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 502300560271830,
+							"parameters": {
+								"variable": "PlayerHealth",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Player",
+							"sid": 914733203334851
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 536978037814955,
+							"parameters": {
+								"seconds": "0.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "reset-global-variables",
+							"objectClass": "System",
+							"sid": 593814218627136,
+							"parameters": {
+								"reset-static": false
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 510285622564558,
+							"parameters": {
+								"layout": "GameOver"
+							}
+						},
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 712340899327477
+						}
+					],
+					"sid": 599596608999387
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 224648266044014,
+							"parameters": {
+								"object": "Health"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Health",
+							"sid": 372452839343419
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 981857595596137,
+							"parameters": {
+								"variable": "PlayerHealth",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 945938732499220,
+							"parameters": {
+								"audio-file": "orb",
+								"loop": "not-looping",
+								"volume": "-5",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 351977128550915,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 839049322892011,
+									"parameters": {
+										"variable": "PlayerHealth",
+										"comparison": 5,
+										"value": "10"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 126062404601447,
+									"parameters": {
+										"variable": "PlayerHealth",
+										"value": "10"
+									}
+								}
+							],
+							"sid": 744274807091664
+						}
+					]
+				}
+			],
+			"sid": 798465475977386
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Enemy",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Boss",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "BossWhole",
+									"sid": 531556181444181,
+									"parameters": {
+										"instance-variable": "Health",
+										"comparison": 3,
+										"value": "0"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "BossWhole",
+									"sid": 552331077664241,
+									"parameters": {
+										"instance-variable": "HasSplit"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "BossWhole",
+									"sid": 619869723763658,
+									"parameters": {
+										"instance-variable": "HasSplit",
+										"value": "true"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 498464227212804,
+									"parameters": {
+										"seconds": "0.5",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "BossWhole",
+									"sid": 192649463612092,
+									"parameters": {
+										"object": "BossFourth",
+										"layer": "0",
+										"image-point": "1",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "BossWhole",
+									"sid": 305526147015830,
+									"parameters": {
+										"object": "BossFourth",
+										"layer": "0",
+										"image-point": "2",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "BossWhole",
+									"sid": 693389957088453,
+									"parameters": {
+										"object": "BossFourth",
+										"layer": "0",
+										"image-point": "3",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "BossWhole",
+									"sid": 392313084815436,
+									"parameters": {
+										"object": "BossFourth",
+										"layer": "0",
+										"image-point": "4",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "BossWhole",
+									"sid": 353561467536696
+								}
+							],
+							"sid": 957888510722983
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "BossFourth",
+									"sid": 931229892572966,
+									"parameters": {
+										"instance-variable": "Health",
+										"comparison": 3,
+										"value": "0"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "BossFourth",
+									"sid": 988151567835826,
+									"parameters": {
+										"instance-variable": "HasSplit"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "BossFourth",
+									"sid": 839001739278414,
+									"parameters": {
+										"instance-variable": "HasSplit",
+										"value": "true"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 919124476260386,
+									"parameters": {
+										"seconds": "0.5",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "BossFourth",
+									"sid": 261308293819925,
+									"parameters": {
+										"object": "BossSixteenth",
+										"layer": "0",
+										"image-point": "1",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "BossFourth",
+									"sid": 712114641299414,
+									"parameters": {
+										"object": "BossSixteenth",
+										"layer": "0",
+										"image-point": "2",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "BossFourth",
+									"sid": 768936794669125
+								}
+							],
+							"sid": 243440835409735
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 701328115474951
+								},
+								{
+									"id": "compare-velocity",
+									"objectClass": "BossWhole",
+									"sid": 163695204815376,
+									"behaviorType": "Physics",
+									"parameters": {
+										"which": "overall-velocity",
+										"comparison": 4,
+										"value": "BossWhole.MaxVelocity"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "BossWhole",
+									"sid": 563631624323305,
+									"parameters": {
+										"instance-variable": "Active"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "apply-impulse-towards-position",
+									"objectClass": "BossWhole",
+									"sid": 602486609363865,
+									"behaviorType": "Physics",
+									"parameters": {
+										"impulse": "500",
+										"x": "Player.X",
+										"y": "Player.Y",
+										"image-point": "0"
+									}
+								}
+							],
+							"sid": 756960727067228
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 363457418352226
+								},
+								{
+									"id": "compare-velocity",
+									"objectClass": "BossFourth",
+									"sid": 423167122250151,
+									"behaviorType": "Physics",
+									"parameters": {
+										"which": "overall-velocity",
+										"comparison": 4,
+										"value": "BossFourth.MaxVelocity"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "BossFourth",
+									"sid": 107049886691580,
+									"parameters": {
+										"instance-variable": "Active"
+									}
+								},
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 199981361915049,
+									"parameters": {
+										"object": "BossFourth"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "apply-impulse-towards-position",
+									"objectClass": "BossFourth",
+									"sid": 661680830530045,
+									"behaviorType": "Physics",
+									"parameters": {
+										"impulse": "500",
+										"x": "Player.X",
+										"y": "Player.Y",
+										"image-point": "0"
+									}
+								}
+							],
+							"sid": 258040491903988
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 406731623171841
+								},
+								{
+									"id": "compare-velocity",
+									"objectClass": "BossSixteenth",
+									"sid": 337363249680651,
+									"behaviorType": "Physics",
+									"parameters": {
+										"which": "overall-velocity",
+										"comparison": 4,
+										"value": "BossSixteenth.MaxVelocity"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "BossSixteenth",
+									"sid": 860778038999225,
+									"parameters": {
+										"instance-variable": "Active"
+									}
+								},
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 200626776593944,
+									"parameters": {
+										"object": "BossFourth"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "apply-impulse-towards-position",
+									"objectClass": "BossSixteenth",
+									"sid": 964993077984109,
+									"behaviorType": "Physics",
+									"parameters": {
+										"impulse": "500",
+										"x": "Player.X",
+										"y": "Player.Y",
+										"image-point": "0"
+									}
+								}
+							],
+							"sid": 952948706186635
+						}
+					],
+					"sid": 657938142141102
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Follow",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 381127749795581
+								},
+								{
+									"id": "compare-velocity",
+									"objectClass": "FollowSlime",
+									"sid": 143642275895003,
+									"behaviorType": "Physics",
+									"parameters": {
+										"which": "overall-velocity",
+										"comparison": 4,
+										"value": "FollowSlime.MaxVelocity"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "FollowSlime",
+									"sid": 166261757715083,
+									"parameters": {
+										"instance-variable": "Active"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "apply-impulse-towards-position",
+									"objectClass": "FollowSlime",
+									"sid": 715509669101264,
+									"behaviorType": "Physics",
+									"parameters": {
+										"impulse": "50",
+										"x": "Player.X",
+										"y": "Player.Y",
+										"image-point": "0"
+									}
+								}
+							],
+							"sid": 160012854608819
+						}
+					],
+					"sid": 474552564036432
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Turret",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-shoot",
+									"objectClass": "TurretSlime",
+									"sid": 448710111915169,
+									"behaviorType": "Turret"
+								}
+							],
+							"actions": [
+								{
+									"id": "spawn-another-object",
+									"objectClass": "TurretSlime",
+									"sid": 110157732276155,
+									"parameters": {
+										"object": "Projectile",
+										"layer": "0",
+										"image-point": "0",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 319399579732168
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Projectile",
+									"sid": 944230161829611,
+									"parameters": {
+										"object": "Player"
+									}
+								},
+								{
+									"id": "is-flashing",
+									"objectClass": "PlayerSprite",
+									"sid": 443761557649786,
+									"behaviorType": "Flash",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 463196501501814,
+									"parameters": {
+										"audio-file": "Grunt",
+										"loop": "not-looping",
+										"volume": "1000",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "subtract-from-eventvar",
+									"objectClass": "System",
+									"sid": 747322315904137,
+									"parameters": {
+										"variable": "PlayerHealth",
+										"value": "1"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Projectile",
+									"sid": 299301835953003
+								},
+								{
+									"id": "flash",
+									"objectClass": "PlayerSprite",
+									"sid": 772335259637820,
+									"behaviorType": "Flash",
+									"parameters": {
+										"on-time": "0.1",
+										"off-time": "0.1",
+										"duration": "1.0"
+									}
+								},
+								{
+									"id": "apply-impulse-at-angle",
+									"objectClass": "Player",
+									"sid": 704152155476867,
+									"behaviorType": "Physics",
+									"parameters": {
+										"impulse": "5000",
+										"angle": "angle(FollowSlime.X, FollowSlime.Y, Player.X, Player.Y)",
+										"image-point": "0"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "PlayerSprite",
+									"sid": 650050751131248,
+									"parameters": {
+										"animation": "\"Hurt\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "Player",
+									"sid": 748786067949488,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 466286242933240,
+									"parameters": {
+										"seconds": "0.25",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "PlayerSprite",
+									"sid": 847344579574911,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "Player",
+									"sid": 940103083703069,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"state": "enabled"
+									}
+								}
+							],
+							"sid": 664414564647051
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "TurretSlime",
+									"sid": 650086391530508,
+									"parameters": {
+										"instance-variable": "Active"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-enabled",
+									"objectClass": "TurretSlime",
+									"sid": 688676029194244,
+									"behaviorType": "Turret",
+									"parameters": {
+										"state": "enabled"
+									}
+								}
+							],
+							"sid": 561695338433598
+						}
+					],
+					"sid": 727769347644703
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-between-angles",
+							"objectClass": "TurretSlime",
+							"sid": 160625114749520,
+							"parameters": {
+								"first-angle": "0",
+								"second-angle": "90"
+							}
+						},
+						{
+							"id": "is-between-angles",
+							"objectClass": "TurretSlime",
+							"sid": 340696090372496,
+							"parameters": {
+								"first-angle": "270",
+								"second-angle": "360"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TurretSlime",
+							"sid": 337509652259581,
+							"parameters": {
+								"animation": "\"Normal\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 430880511202042,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-between-angles",
+							"objectClass": "TurretSlime",
+							"sid": 778117128039093,
+							"parameters": {
+								"first-angle": "90",
+								"second-angle": "270"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TurretSlime",
+							"sid": 408809835876285,
+							"parameters": {
+								"animation": "\"YFlipped\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 220487775197087
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Generic",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 813223315391862
+								}
+							],
+							"actions": [
+								{
+									"id": "set-world-gravity",
+									"objectClass": "Enemy",
+									"sid": 298000389043457,
+									"behaviorType": "Physics",
+									"parameters": {
+										"gravity": "0"
+									}
+								}
+							],
+							"sid": 818039025263981
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Enemy",
+									"sid": 516641670658031,
+									"parameters": {
+										"object": "TestSword"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "TestSword",
+									"sid": 170289716338262
+								},
+								{
+									"id": "is-flashing",
+									"objectClass": "TestSword",
+									"sid": 686660522526038,
+									"behaviorType": "Flash",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 832534105913244,
+									"parameters": {
+										"audio-file": "hit1",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "subtract-from-instvar",
+									"objectClass": "Enemy",
+									"sid": 597950510892172,
+									"parameters": {
+										"instance-variable": "Health",
+										"value": "1"
+									}
+								},
+								{
+									"id": "apply-impulse-at-angle",
+									"objectClass": "Enemy",
+									"sid": 768883296484345,
+									"behaviorType": "Physics",
+									"parameters": {
+										"impulse": "15000",
+										"angle": "angle(Player.X, Player.Y, FollowSlime.X, FollowSlime.Y)",
+										"image-point": "0"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "TestSword",
+									"sid": 463622269107424,
+									"behaviorType": "Physics",
+									"parameters": {
+										"mode": "disabled"
+									}
+								},
+								{
+									"id": "flash",
+									"objectClass": "TestSword",
+									"sid": 554112096555564,
+									"behaviorType": "Flash",
+									"parameters": {
+										"on-time": "0.1",
+										"off-time": "0.1",
+										"duration": ".5"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 562237192628983,
+									"parameters": {
+										"seconds": "1",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-velocity",
+									"objectClass": "Enemy",
+									"sid": 465703376554944,
+									"behaviorType": "Physics",
+									"parameters": {
+										"x-component": "0",
+										"y-component": "0"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "TestSword",
+									"sid": 420546275059965,
+									"behaviorType": "Physics",
+									"parameters": {
+										"mode": "enabled"
+									}
+								}
+							],
+							"sid": 486571832630338,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [],
+									"sid": 401807944652337
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Enemy",
+									"sid": 202240075736501,
+									"parameters": {
+										"instance-variable": "Health",
+										"comparison": 3,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "start-fade",
+									"objectClass": "Enemy",
+									"sid": 642283465678495,
+									"behaviorType": "Fade"
+								}
+							],
+							"sid": 400512159549133,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Enemy",
+											"sid": 641561040690518,
+											"parameters": {
+												"instance-variable": "ItemChanceDone"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Enemy",
+											"sid": 748396967458166,
+											"parameters": {
+												"instance-variable": "ItemChanceDone",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 278336232802892,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 643028817507105,
+													"parameters": {
+														"first-value": "random(3)",
+														"comparison": 3,
+														"second-value": "1"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "spawn-another-object",
+													"objectClass": "Enemy",
+													"sid": 543113540005786,
+													"parameters": {
+														"object": "Health",
+														"layer": "0",
+														"image-point": "0",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												}
+											],
+											"sid": 509928195368652
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Enemy",
+									"sid": 979583984251057,
+									"parameters": {
+										"object": "Player"
+									}
+								},
+								{
+									"id": "is-flashing",
+									"objectClass": "PlayerSprite",
+									"sid": 739109472086681,
+									"behaviorType": "Flash",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "subtract-from-eventvar",
+									"objectClass": "System",
+									"sid": 343673167133885,
+									"parameters": {
+										"variable": "PlayerHealth",
+										"value": "1"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 214121929126891,
+									"parameters": {
+										"audio-file": "Grunt",
+										"loop": "not-looping",
+										"volume": "1000",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "flash",
+									"objectClass": "PlayerSprite",
+									"sid": 879118880904305,
+									"behaviorType": "Flash",
+									"parameters": {
+										"on-time": "0.1",
+										"off-time": "0.1",
+										"duration": "1.0"
+									}
+								},
+								{
+									"id": "apply-impulse-at-angle",
+									"objectClass": "Player",
+									"sid": 679328621068234,
+									"behaviorType": "Physics",
+									"parameters": {
+										"impulse": "10000",
+										"angle": "angle(FollowSlime.X, FollowSlime.Y, Player.X, Player.Y)",
+										"image-point": "0"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "Player",
+									"sid": 184083913664635,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "PlayerSprite",
+									"sid": 948624779322607,
+									"parameters": {
+										"animation": "\"Hurt\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 111018851783316,
+									"parameters": {
+										"seconds": "0.25",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "Player",
+									"sid": 270682458708342,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "PlayerSprite",
+									"sid": 635835731462178,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 196037499882498
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "ActiveZone",
+									"sid": 624549625940343,
+									"parameters": {
+										"object": "Player"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 930003433438490,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "for-each",
+											"objectClass": "System",
+											"sid": 259120125035020,
+											"parameters": {
+												"object": "Enemy"
+											}
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Enemy",
+											"sid": 293620436921504,
+											"parameters": {
+												"object": "ActiveZone"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Enemy",
+											"sid": 469898453821831,
+											"parameters": {
+												"instance-variable": "Active",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 404058928553944
+								}
+							]
+						}
+					],
+					"sid": 587866315404502
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 726388859851583
+						}
+					],
+					"actions": [
+						{
+							"id": "add-object-to-target",
+							"objectClass": "TurretSlime",
+							"sid": 578597419906096,
+							"behaviorType": "Turret",
+							"parameters": {
+								"target": "Player"
+							}
+						}
+					],
+					"sid": 614582793665716
+				}
+			],
+			"sid": 935662916705002
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Gate",
+					"sid": 750439708364865,
+					"parameters": {
+						"object": "Key"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Gate",
+					"sid": 485133222941681
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Key",
+					"sid": 709041469890163
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 195003916341503,
+					"parameters": {
+						"audio-file": "Key",
+						"loop": "not-looping",
+						"volume": "-5",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 797258593562584
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Plates",
+					"sid": 575903067643735,
+					"parameters": {
+						"object": "Crate"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Plates",
+					"sid": 569801832848864,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Plates",
+					"sid": 749441620955745,
+					"parameters": {
+						"instance-variable": "Pressed",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Plates",
+					"sid": 129920296661190,
+					"parameters": {
+						"animation": "\"Pressed\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 387546244527591,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Plates",
+					"sid": 193744819666018,
+					"parameters": {
+						"object": "Crate"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Plates",
+					"sid": 933382665547063,
+					"parameters": {
+						"object": "Player"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Plates",
+					"sid": 972333385530770,
+					"parameters": {
+						"instance-variable": "Pressed",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Plates",
+					"sid": 962222013699446,
+					"parameters": {
+						"animation": "\"Unpressed\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 958698570563266
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 324155996204232,
+					"parameters": {
+						"object": "FinishChest"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "FinishChest",
+					"sid": 118075647645417,
+					"parameters": {
+						"instance-variable": "Active"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Player",
+					"sid": 604631703449486,
+					"behaviorType": "Physics",
+					"parameters": {
+						"mode": "disabled"
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 268014593230903
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 586638792226269,
+					"parameters": {
+						"audio-file": "Final Fantasy Victory Sound Effects",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 124678121824956,
+					"parameters": {
+						"seconds": "6",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 394845701247021,
+					"parameters": {
+						"reset-static": false
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 101244338725352,
+					"parameters": {
+						"layout": "Main Menu"
+					}
+				}
+			],
+			"sid": 325151834214976
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 614520591052002,
+					"parameters": {
+						"object": "Textzone"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "TutorialText",
+					"sid": 264910984209442,
+					"parameters": {
+						"text": "Textzone.TutorialText"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TutorialText",
+					"sid": 651734636595266,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 581745331027416
+		},
+		{
+			"bookmark": true,
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 798900999230902,
+					"parameters": {
+						"object": "Textzone"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "TutorialText",
+					"sid": 867392975811068,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 844250850069629
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "HealthCrate",
+					"sid": 139713415542904,
+					"parameters": {
+						"object": "TestSword"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "TestSword",
+					"sid": 491452744853149
+				},
+				{
+					"id": "is-flashing",
+					"objectClass": "TestSword",
+					"sid": 779912634867074,
+					"behaviorType": "Flash",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "HealthCrate",
+					"sid": 403317471113761,
+					"parameters": {
+						"object": "Health",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "HealthCrate",
+					"sid": 633760329576770
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 105146768174437,
+					"parameters": {
+						"audio-file": "out",
+						"loop": "not-looping",
+						"volume": "-10",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 157677092907836
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "PressurePlate1",
+					"sid": 985445857822567,
+					"parameters": {
+						"instance-variable": "Pressed"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "PressureGate1",
+					"sid": 596284939725353,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "PressureGate1",
+					"sid": 796688476382021,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "PressureGate1",
+					"sid": 113595004887967,
+					"behaviorType": "Physics",
+					"parameters": {
+						"mode": "enabled"
+					}
+				}
+			],
+			"sid": 111411059084837
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "PressurePlate1",
+					"sid": 241273165103524,
+					"parameters": {
+						"instance-variable": "Pressed"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "PressureGate1",
+					"sid": 587544099146038,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "PressureGate1",
+					"sid": 107405587611677,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "PressureGate1",
+					"sid": 558891498758590,
+					"behaviorType": "Physics",
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 860247718247915
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "PressurePlate2",
+					"sid": 809271653811859,
+					"parameters": {
+						"instance-variable": "Pressed"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "PressureGate2",
+					"sid": 906732472140068,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "PressureGate2",
+					"sid": 540614919745779,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "PressureGate2",
+					"sid": 118310812200798,
+					"behaviorType": "Physics",
+					"parameters": {
+						"mode": "enabled"
+					}
+				}
+			],
+			"sid": 241740222740516
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "PressurePlate2",
+					"sid": 686147704731099,
+					"parameters": {
+						"instance-variable": "Pressed"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "PressureGate2",
+					"sid": 155013609487863,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "PressureGate2",
+					"sid": 257764242105569,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "PressureGate2",
+					"sid": 942977370342291,
+					"behaviorType": "Physics",
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 501777179230632
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "PressurePlate3",
+					"sid": 485406735305146,
+					"parameters": {
+						"instance-variable": "Pressed"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "PressureGate3",
+					"sid": 299624966463292,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "PressureGate3",
+					"sid": 466616731903544,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "PressureGate3",
+					"sid": 951713687833065,
+					"behaviorType": "Physics",
+					"parameters": {
+						"mode": "enabled"
+					}
+				}
+			],
+			"sid": 377105253743027
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "PressurePlate3",
+					"sid": 843285521398396,
+					"parameters": {
+						"instance-variable": "Pressed"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "PressureGate3",
+					"sid": 710118845953437,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "PressureGate3",
+					"sid": 875142436854156,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "PressureGate3",
+					"sid": 703555385728631,
+					"behaviorType": "Physics",
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 257410244038237
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Crate",
+					"sid": 530626276769077,
+					"parameters": {
+						"object": "PressurePlate1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 293158497708839,
+					"parameters": {
+						"audio-file": "door_close",
+						"loop": "not-looping",
+						"volume": "-5",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 268884083406256
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 527340596744373,
+					"parameters": {
+						"object": "PressurePlate1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 463111193480341,
+					"parameters": {
+						"audio-file": "door_close",
+						"loop": "not-looping",
+						"volume": "-5",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 706351172494879
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Crate",
+					"sid": 738216970637234,
+					"parameters": {
+						"object": "PressurePlate2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 710350718310552,
+					"parameters": {
+						"audio-file": "door_close",
+						"loop": "not-looping",
+						"volume": "-5",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 135518825506418
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 322758708081535,
+					"parameters": {
+						"object": "PressurePlate2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 181249847949534,
+					"parameters": {
+						"audio-file": "door_close",
+						"loop": "not-looping",
+						"volume": "-5",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 948634584010070
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Crate",
+					"sid": 471220873373812,
+					"parameters": {
+						"object": "PressurePlate3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 105474468953058,
+					"parameters": {
+						"audio-file": "door_close",
+						"loop": "not-looping",
+						"volume": "-5",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 841934074608624
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 518152534318652,
+					"parameters": {
+						"object": "PressurePlate3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 182682956084025,
+					"parameters": {
+						"audio-file": "door_close",
+						"loop": "not-looping",
+						"volume": "-5",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 901113205025337
+		}
+	],
+	"sid": 802706152580052
+}

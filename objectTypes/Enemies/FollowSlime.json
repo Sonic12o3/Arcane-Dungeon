@@ -1,0 +1,66 @@
+{
+	"name": "FollowSlime",
+	"plugin-id": "Sprite",
+	"sid": 329053341546378,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "MaxVelocity",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 448132549814809
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 974,
+						"height": 895,
+						"originX": 0.5143737166324436,
+						"originY": 0.524022346368715,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6551360,
+						"collisionPoly": {
+							"points": [
+								0.6273100616016427,
+								0.0033519553072625698,
+								0.6735112936344969,
+								0.0033519553072625698,
+								0.7227926078028748,
+								0.01452513966480447,
+								0.9045174537987679,
+								0.1463687150837989,
+								0.47638603696098564,
+								0.9966480446927374,
+								0.09342915811088295,
+								0.8849162011173184,
+								0.029774127310061602,
+								0.6022346368715084
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 117982771461956,
+				"name": "TestInteractable",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

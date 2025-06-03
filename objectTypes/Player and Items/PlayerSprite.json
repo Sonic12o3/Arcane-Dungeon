@@ -1,0 +1,138 @@
+{
+	"name": "PlayerSprite",
+	"plugin-id": "Sprite",
+	"sid": 462655535551439,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 979679274362868
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 989570361814358
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1000,
+						"height": 1000,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6629772,
+						"collisionPoly": {
+							"points": [
+								0.368,
+								0.21,
+								0.765,
+								0.481,
+								0.727,
+								0.958,
+								0.473,
+								0.979,
+								0.345,
+								0.973,
+								0.28,
+								0.956
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 1000,
+						"height": 1000,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 710956,
+						"collisionPoly": {
+							"points": [
+								0.368,
+								0.21,
+								0.765,
+								0.481,
+								0.727,
+								0.958,
+								0.473,
+								0.979,
+								0.345,
+								0.973,
+								0.28,
+								0.956
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 786799755442178,
+				"name": "Idle",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 1000,
+						"height": 1000,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 294471,
+						"collisionPoly": {
+							"points": [
+								0.399,
+								0.008,
+								0.761,
+								0.485,
+								0.76,
+								0.972,
+								0.38,
+								0.975,
+								0.287,
+								0.962,
+								0.277,
+								0.553
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 661508652968368,
+				"name": "Hurt",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

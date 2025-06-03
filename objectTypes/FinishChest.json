@@ -1,0 +1,62 @@
+{
+	"name": "FinishChest",
+	"plugin-id": "Sprite",
+	"sid": 383307240850586,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "Active",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 822330595639796
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1897036,
+						"collisionPoly": {
+							"points": [
+								0.03125,
+								0.078125,
+								0.984375,
+								0.078125,
+								1,
+								0.921875,
+								0.015625,
+								0.921875,
+								0,
+								0.359375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 307978169606854,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

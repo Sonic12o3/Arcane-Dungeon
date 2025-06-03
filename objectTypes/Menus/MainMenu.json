@@ -1,0 +1,9 @@
+{
+	"name": "MainMenu",
+	"plugin-id": "Button",
+	"sid": 528441221512135,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

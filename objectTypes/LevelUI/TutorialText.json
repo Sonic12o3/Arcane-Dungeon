@@ -1,0 +1,16 @@
+{
+	"name": "TutorialText",
+	"plugin-id": "Text",
+	"sid": 662083054559195,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 167566945656290
+		}
+	],
+	"effectTypes": []
+}
